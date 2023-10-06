@@ -1,0 +1,479 @@
+/*  1- COMMON STYLES
+    2- GENERAL STYLES
+    3- SECTIONS  
+      3.0  HEADER
+      3.1  HOME SECTION 
+      3.2  ABOUT SECTION 
+      3.3  PORTFOLIO SECTION .
+      3.4  OFFER SECTION .
+      3.5  SERVICE SECTION .
+      3.6  NUMBERS SECTION .
+      3.7  PRICING SECTION .
+      3.8  TESTIMONIAL SECTION .
+      3.9  TEAM SECTION 
+      3.10 BLOG SECTION 
+      3.11 FOOTER SECTION
+ */
+/* 1- COMMON STYLES.......................................................................................... */
+
+
+
+.ltr{
+    position: relative;
+}
+.ltr:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #333; 
+}
+.ltr:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+     }
+/* 2- GENERAL STYLES........................................................................................ */
+     body {
+     font-family:sans-serif;
+    }
+ *  {
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+     }
+    .container {
+     width:80%;
+     margin: auto;
+     }
+     a {
+        text-decoration: none;
+     }
+     .section-header {
+         text-align: center;   
+     }
+     .section-header .section-title{
+         font-size: 35px;
+         text-transform: capitalize;
+         margin-bottom: 9px;
+         margin-top: 6px;
+     }
+     .section-header .line{
+         display: block;
+         width: 62px;
+         height: 4px;
+         background-color: royalblue;
+        margin: 0  auto  70px  auto;
+     }
+/* 3- SECTIONS.............................................................................................. */
+/* 3.0 HEADER................................................................................................ */
+     .header {
+         width:100%;
+         position: fixed;
+         z-index: 10;
+         background-color: rgba(9, 7, 15, 0.5);
+     }
+     .header .logo {
+         width:42%;
+         float: left;
+        
+     }
+     .navbar{
+         width: 700px;
+         height: 30px;
+         float: left;
+         text-align: center;
+         
+        
+     }
+    
+     .header .container .header-content .navbar > li{
+         list-style: none;
+         display: inline-block;
+
+     }
+     .header .container .header-content .navbar > li > a{
+         color: rgb(251, 248, 248);
+         padding:20px;
+         display: block;
+         font-size: 19px;
+     }
+    
+     .header .container .header-content .navbar > li > a.active:after{
+      width:100%;
+    }
+     .header .container .header-content .navbar > li > a:hover:after{
+         width: 100%;
+     }
+     .dd{
+         position: relative;
+     }
+     .a-bp{
+         color: white;
+         display: block;
+         padding: 10px;
+     }
+     .bp {
+         position: absolute;
+         width: 120px;
+         padding:5px;
+         background-color: rgb(122, 122, 221);
+         text-align: center;
+         left:78%;
+         visibility: hidden;
+        
+         transition: opacity 0.5s;
+         }
+         .dd:hover + .bp{
+             visibility: visible;
+             
+         }
+/* 3.1 HOME SECTION......................................................................................... */
+         .home {
+             height:100vh;
+             background-image:url(../images/background.jpg);
+             background-size: 100%;
+         }
+         .home-content{
+          padding-top: 200px;
+          padding-left: 110px;
+
+         }
+         .home-content .hhh {
+             color: #fff;
+             font-size: 60px;
+             text-transform: uppercase;
+         }
+         .para {
+             margin-top: 20px;
+             margin-bottom: 20px;
+             color: blanchedalmond;
+             letter-spacing: 1.5px;
+             line-height: 1.6px;
+             font-size: 23px;
+             
+         }
+         .home-content .btn {
+             min-width: 150px;
+             padding: 15px 0;
+             border-radius: 5px;
+             border: 0;
+             cursor: pointer;
+             font-size: 18px;
+         }
+         .btn-start {
+             margin-left: 30px;
+             margin-right: 10px;
+             
+         }
+         .btn-learn{
+            background-color: blue;
+            color: cornsilk;
+         }
+         .btn:hover{
+            opacity: 0.5;
+         }
+/* 3.2 ABOUT SECTION......................................................................................... */
+         .section-title{
+            color: white;
+         }
+
+
+        .about{
+             padding:20px 0;
+             background-color: #21355f;
+         }
+         .about-content{
+             text-align: center;
+             height: 350px;
+             overflow: hidden;
+         }
+        .about-item {
+             width: 30%;
+             float: left;
+             text-align: center;
+             border:3px solid rgb(37, 31, 37);
+             padding: 30px 15px;
+             background-color: rgb(94, 134, 203);
+             margin-left: 25px;
+         }
+         .about-item-ltr{
+             margin: 0 5%;
+             
+         }
+         .icon{
+             color: #d8e1f4;
+             margin-bottom: 10px;
+         }
+         .about-item-title {
+             text-transform: capitalize;
+             margin-bottom: 15px;
+             transition: color .5s;
+             color: white;
+         }
+         .about-content p {
+             letter-spacing: 2px;
+             line-height: 22px;
+             margin-bottom: 15px;
+             color:rgb(252, 253, 253);
+         }
+         .section-header .line{
+            background-color: white;
+            }
+         .about-item-link {
+             color: black;
+             text-transform: capitalize;
+            
+
+         }
+         .about-item:hover .about-item-title{
+             color: blue;
+             
+             transition: color 2s;
+         }
+         .ltr:hover {
+            color: rgb(82, 80, 80) ;
+            opacity: .5;
+           
+         }
+         .ltr:hover .about-item-link{
+            color: blue;
+         }
+
+
+
+/* 3.9 TEAM SECTION......................................................................................... */
+        .team-content{
+            overflow: hidden;
+            padding-left: 70px;
+            
+        }
+       .section-title-team{
+            color: rgb(47, 61, 93);
+            font-size: 50px;
+        }
+        .container_team{
+            background-color: white;
+        }
+        .team-item{
+            display: block;
+            float: left;
+            width: 28%;
+            background-color: #243f65;
+            padding: 17px 13px;
+            text-align: center;
+            position: relative;
+        }
+        .team-img{
+            width: 90%;
+            margin: auto;
+            position: relative;
+        }
+        .team-overlay{
+            position: absolute;
+            top:0;
+            right:0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(105, 99, 99, 0.5);
+            visibility: hidden;
+           
+        }
+        .team-item:hover .team-overlay{
+            visibility: visible;
+           
+           
+        }   
+        .team-overlay a {
+            display: block;
+            width: 40px;
+            height:40px;
+            background-color: #7ba7ff;
+            color:#fff;
+            margin-left: auto;
+        }
+        .team-overlay a i{
+            line-height: 40px;
+        }
+        .team-info-title{
+            color:#222;
+            padding:10px 0;
+        }
+        .team-info-text{
+            color:#999;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .team-item.mg{
+            margin: 0 5%;
+        }
+        .team-img img{
+            width: 100%;
+        }
+        .team-item:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            top:0;
+            left: 0;
+            background-color:  rgba(91, 88, 88);
+            transition: .5;
+            opacity: .5;
+            
+            
+        }
+        .team-item:hover:after{
+            width: 100%;
+            height: 100%;
+            
+            transition: 1s;
+        }
+        .team-item:hover .team-info-title{
+            color:#fff;
+            transition:  .5s;
+        }
+        .team-item:hover .team-info-text{
+            color: blue;
+            transition: 1s;
+        }
+/* 3.10 BLOG SECTION........................................................................................ */
+        .blog-content{
+            overflow: hidden;
+            background-color:#293a60;
+            
+        }
+        .blog{
+            background-color: #293a60;
+        }
+        .blog-item{
+            float: left;
+            width: 30%;
+            background-color: #546687;
+            position: relative;
+        }
+        .blog-item-img{
+            width: 100%;
+            margin-left: 50px;
+        }
+        .blog-list{
+            list-style: none;
+            margin: 10px 0;
+        }
+        .blog-list li{
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+        .blog-list li  i{
+            color: #6195ff;
+        }
+        .blog-info{
+            padding: 20px;
+        }
+        .blog-title{
+            font-weight: bold;
+            margin: 20px 0;
+            margin-bottom: 25px;
+        }
+        .blog-desc{
+            color: #999;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .blog-link{
+            color: #6195ff;
+        }
+        .blog-item.mg{
+            margin: 0 5%;
+        }
+        .blog-item:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            top: 0;
+            left: 0;
+            right: 0%;
+            bottom: 0;
+            transition: 1s;
+            opacity: 0;
+            background-color: #6195ff;
+        }
+        .blog-item:hover:after{
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+        }
+        .section-header .section-title{
+            color: white;
+            margin-top: 15px;
+        }
+        .blog_icon{
+           font-size:large;
+           color: white ;
+        }
+/* 3.11 FOOTER SECTION....................................................................................... */
+        .mmg{
+            width: 160px;
+            height: 70px;
+        }
+        .footer{
+            background-color: rgb(51, 57, 67);
+            text-align: center;
+            height: 250px;
+            padding: 60px 0;
+        }
+        .footer-links{
+            list-style: none;
+            margin: 20px 0;
+        }
+        .footer-links li{
+            display: inline-block;
+            background-color: #6195ff;
+            width:50px;
+            height: 50px;
+            position: relative;
+            z-index: 1;
+            border-radius: 50%;
+        }
+        .footer-links li a{
+            display: block;
+            width:100%;
+            height: 100%;
+            color:#6195ff;
+            color: #fff;
+            line-height: 50px;
+            padding-top: 15px;
+            padding-right: 15px;
+            font-size: 23px;
+            margin: 0 8px;
+        }
+        .footer-links li:after{
+            position: absolute;
+            content: "";
+            opacity: 0;
+            transition: .3s;
+            background-color: #0954ec;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0%;
+            bottom: 0;
+        }
+        .footer-links li:hover:after{
+            opacity: .7;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        .footer p{
+            color:#999;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
